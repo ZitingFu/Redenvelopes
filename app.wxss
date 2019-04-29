@@ -1,0 +1,33 @@
+/**app.wxss**/
+/* @import "Animate.wxss" */
+.container {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+  width:100%;
+  height:100%;
+
+} 
+.title{
+  font-size:42rpx;
+  text-align:center;
+  color:#444444;
+
+}
+.container .login {
+  width:610rpx;
+  color:#fff;
+  /* height:100rpx; */
+  margin:300rpx auto;
+  text-align:center;
+  line-height:92rpx;
+  background:#1aad19;
+  border-radius:10rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}

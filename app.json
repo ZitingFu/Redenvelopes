@@ -1,0 +1,19 @@
+{
+  "pages":[
+  "pages/home/home",
+   "pages/logs/logs",
+  "pages/login/login",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于小程序位置接口的效果展示"
+    }
+  }
+}

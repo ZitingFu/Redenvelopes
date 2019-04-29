@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+  </view>
+  <view class="title">拍立返超级会员</view>
+   <view class="userinfo">
+    <button class="login"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信登陆</button>
+  </view>
+</view>

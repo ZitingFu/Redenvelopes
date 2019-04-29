@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+    <!-- 导航栏 -->
+    <!-- <text>导航栏</text>
+    <button bindtap="btnClick1" type="primary">显示导航条加载动画</button>
+    <button bindtap="btnClick2" type="primary">隐藏导航条加载动画</button>
+    <button bindtap="btnClick3" type="primary">设置当前页面的标题</button>
+    <button bindtap="btnClick4" type="primary">设置页面导航条颜色</button> -->
+    <!-- 下拉背景变化 -->
+    <!-- <text>导下拉背景变化</text>
+    <button bindtap="BgbtnClick1" type="primary">改变下拉背景字体、loading 图的样式</button>
+    <button bindtap="BgbtnClick2" type="primary">动态改变窗口的背景色为黑色</button>
+    <button bindtap="BgbtnClick3" type="primary">动态底部窗口的上面为红，下面为绿</button> -->
+    <!-- 地理位置 -->
+    <!-- <button bindtap="BgbtnClick3" type="primary">获取地理位置</button> -->
+
+     <view class="setPermissionsBox">
+      <view style='padding:3%;text-align:center;font-size:38rpx;'>微信定位失败</view>
+      <view style='padding:0 10%;font-size:30rpx;color:#999;'>请在手机设置中，打开微信定位或退出小程序请重新进入          </view>
+         <button bindtap="setPermissions" class="setPermissions">确定</button>
+      </view>
+</view>
