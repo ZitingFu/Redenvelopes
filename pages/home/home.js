@@ -2,7 +2,8 @@
 const util = require('../../utils/util.js')
 Page({
   data: {
-    activeIndex: 1, //1关闭弹出层 2打开弹框 3手的Animation 
+    activeIndex: 1, //1关闭弹出层 2中奖 3手的Animation 4未中奖 ,
+    money:5
   }, 
   onShow: function () {
     var that = this;
@@ -17,6 +18,11 @@ Page({
     this.setData({
       activeIndex: 1
     })
+  },
+  // 点击领取
+  Receive: function(){
+    console.log("领取金额")
+    this.maskClose()
   },
   // 点击触发摇一摇
   startAnimation: function () {
@@ -35,13 +41,13 @@ Page({
       wx.showLoading({
           title: '正在加载...',
       })
-        setTimeout(function () {
-          wx.hideLoading()
-          that.setData({
-              activeIndex:2
-          })
-        },1500)
+      setTimeout(function () {
+        wx.hideLoading()
+        // 控制 中奖跟未中奖的图片
+        that.setData({
+            activeIndex:2
+        })
+      },1500)
     }
   },
- 
 })

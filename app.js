@@ -28,8 +28,6 @@ App({
         }
       }
     })
-    //登录
-
   },
   globalData: {
     userInfo: null

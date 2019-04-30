@@ -3,7 +3,15 @@
   	<image bindtap='startAnimation' class="startAnimation"  src='../../image/bg.png'></image>
     <image bindtap='startAnimation' class="Shake {{activeIndex == 3 ? 'block wobble animated' : 'block'}}"  src='../../image/Shake.png'></image>
 
-	  <view class="mask {{activeIndex == 2 ? 'block' : 'none'}}"></view>
-    <image src='../../image/Close.png' bindtap='maskClose' class="Close {{activeIndex == 2 ?  'block' : 'none'}}"></image>	
-    <image src='../../image/Redenvelopes.png' class="Redenvelopes {{activeIndex == 2 ? 'block swing animated' : 'none'}}"></image>
+	 <!-- 中奖 -->
+    <image src='../../image/Close.png' bindtap='maskClose' class="Close {{activeIndex == 2 ?  'block' : 'none'}}"></image>
+    <view class="mask {{activeIndex == 2 ? 'block' : 'none'}}"></view>
+    <image src='../../image/Redenvelopes.png' class="Redenvelopes {{activeIndex == 2 ? 'block swing animated' : 'none'}}">
+        <span class="money"><i class="money_num">{{money}}</i><i class="Company_money">元</i></span>
+        <image src='../../image/Receive.png' bindtap='Receive' class="Receive"></image>
+    </image>
+  <!-- 未中奖 -->
+    <view class="mask {{activeIndex == 4 ? 'block' : 'none'}}"></view>
+    <image src='../../image/Close.png' bindtap='maskClose' class="Close {{activeIndex == 4 ?  'block' : 'none'}}"></image>
+    <image src='../../image/Noprize.png' class="Noprize {{activeIndex == 4 ? 'block' : 'none'}}"></image>
 </view>	

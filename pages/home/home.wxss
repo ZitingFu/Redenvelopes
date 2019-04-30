@@ -19,28 +19,63 @@
   top:0;
   left: 0;
   position: fixed;
-
 }
 .Shake{
   width: 48%;
   height: 33%;
   top:37.6%;
-  left:26%;
+  left:28%;
   position: fixed;
 }
 /* 遮罩层 */
 .mask{
   background-color: #000;
   opacity: .8;
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 .Redenvelopes{
   width:100%;
   height:80%;
   top:10%;
+  position:relative;
+  margin:0 auto;
+  z-index:3;
+}
+.Receive{
+  width:45%;
+  height:13%;
+  bottom:10%;
+  position:absolute;
+  z-index:3;
+  left:29%;
+}
+.money{
+  width:41%;
+  text-align:center;
+  bottom:23%;
+  position:absolute;
+  z-index:3;
+  left:28%;
+  color:#ffeb61;
+}
+.money_num{
+  font-size:130rpx;
+  position:relative;
+  top:-5rpx;
+
+}
+.Company_money{
+  font-size:42rpx;
+  margin-left: 5rpx;
+}
+.Noprize{
+  width:70%;
+  height:50%;
+  top:25%;
+  left:15%;
   position:absolute;
   margin:0 auto;
   z-index:3;
